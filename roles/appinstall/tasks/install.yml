@@ -1,0 +1,2 @@
+- name: start service
+  shell: nohup /usr/local/logstash-1.5.4/bin/logstash -f /usr/local/logstash-1.5.4/agent.conf -l /var/log/logstash.log &

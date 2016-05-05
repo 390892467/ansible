@@ -1,0 +1,4 @@
+- hosts: vm03
+  remote_user: root
+  roles:
+   - appinstall

@@ -1,0 +1,6 @@
+- name: Copy file to dstserver
+  copy: src=logstash.zip dest=/tmp/logstash.zip owner=root group=root
+- name: Uncomperssion packet to project dir
+  shell: unzip -o /tmp/logstash.zip -d /usr/local/
+- name: Copy templatfile to dest server
+  template: src=agent.conf dest=/usr/local/logstash-1.5.4 
